@@ -16,8 +16,8 @@ const Board = ({startGame, scoreChange}) => {
 
     useEffect(() => {
         const createboard = () => {
-            const bRows = 5 + Math.round(Math.random() * 15);
-            const bCols = 5 + Math.round(Math.random() * 15);
+            const bRows = 2 + Math.round(Math.random() * 10);
+            const bCols = 2 + Math.round(Math.random() * 15);
 
             console.log(`Rows: ${bRows} Cols: ${bCols}`)
 
@@ -90,10 +90,12 @@ const Board = ({startGame, scoreChange}) => {
     board.data && (
        <div className='boardContainer'>                    
         {board.data.map((row, colIdx) => (
-            <div key={colIdx}>
+            <div className='boardCol' key={colIdx}>
             {row.map((item, rowIdx) => (
-                <div data-row={rowIdx} data-col={colIdx} key={rowIdx} className='letterDiv' onClick={handleClick}>
-                {item}  
+                <div className='boardRow' key={rowIdx}>
+                <p className='pletter' data-row={rowIdx} data-col={colIdx} onClick={handleClick}>
+                {item}
+                </p>
              </div>
             ))}
             </div>

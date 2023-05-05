@@ -7,16 +7,27 @@
 }
 .boardContainer{
   display: flex;
-  gap:20px;
-  font-size: x-large;
+  gap:0px;
+  font-size: xx-large;
 }
-.letterDiv{
+.boardCol{
+  /* border: 1px solid wheat; */
+}
+.boardRow{
   cursor: pointer;
+  padding: 10px;
+  /* border: none; */
+  border: 1px solid black;
 }
-.letterDiv:hover{
-  font-size: larger;
-  font-weight: bold;
+.boardRow:hover{
+  /* font-size: larger; */
+  /* font-weight: bold; */
   color: white;
+  border: 1px solid wheat;
+}
+.pletter{
+  padding: 0px;
+  margin: 0px;
 }
 .header{
   width: 80%;
