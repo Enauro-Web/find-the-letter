@@ -1,0 +1,34 @@
+export const data = [
+    {
+        main:'A',
+        hidden:'4'
+    },
+    {
+        main:'O',
+        hidden:'0'
+    },
+    {
+        main:'E',
+        hidden:'3'
+    },
+    {
+        main:'B',
+        hidden:'8'
+    },
+    {
+        main:'d',
+        hidden:'b'
+    },
+    {
+        main:'6',
+        hidden:'b'
+    },
+    {
+        main:'W',
+        hidden:'V'
+    },
+    {
+        main:'M',
+        hidden:'N'
+    },
+]
